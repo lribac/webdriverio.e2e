@@ -26,8 +26,8 @@ class LoginPage extends Page
   /**
      * a method to encapsule automation code to interact with the page
      * e.g. to login using username and password
-     * @param {import("webdriverio/build/commands/element/addValue").Value | import("webdriverio/build/commands/element/addValue").Value[]} username
-     * @param {import("webdriverio/build/commands/element/addValue").Value | import("webdriverio/build/commands/element/addValue").Value[]} password
+     * @param {string} username
+     * @param {string} password
      */
   async login(username, password)
   {
