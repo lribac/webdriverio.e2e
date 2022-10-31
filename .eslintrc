@@ -1,0 +1,52 @@
+{
+    "env": {
+        "browser": true,
+        "node": true,
+        "es2021": true,
+        "mocha": true
+    },
+    "extends": [
+        "airbnb-base",
+        "plugin:wdio/recommended"
+    ],
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+        "ecmaVersion": 12,
+        "sourceType": "module"
+    },
+    "globals": {
+        "$": true,
+        "$$": true,
+        "browser": true,
+        "driver": true
+    },
+    "plugins": [
+        "@typescript-eslint",
+        "wdio",
+        "import"
+    ],
+    "rules": {
+        "curly": ["error", "all"],
+        "no-use-before-define": ["error", {"functions": false, "classes": false, "variables": false}],
+        "brace-style": ["error", "allman", {"allowSingleLine": true}],
+        "radix": ["error", "as-needed"],
+//        "no-plusplus": [2, { "alLowForLoopAfterthoughts": true }],
+        "import/no-extraneous-dependencies": ["error", {"devDependencies": true}],
+        // from plugin estint-plugin-import
+        "import/no-cycle": "off",
+        // from plugin estint-plugin-import
+        "class-methods-use-this": ["off", {"exceptMethods": []}],
+        "prefer-template": "off",
+        "import/prefer-default-export": "off",
+        "wdio/await-expect": "off",
+        "wdio/no-pause": "off",
+        "max-len": ["error", 80, 2, {
+                "ignoreUrls": false,
+                "ignoreComments": true,
+                "ignoreRegExpLiterals": false,
+                "ignoreStrings": false,
+                "ignoreTemplateLiterals": false
+            }
+        ]
+    }
+}
