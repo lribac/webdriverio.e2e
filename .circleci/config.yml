@@ -17,8 +17,8 @@ jobs:
 
     working_directory: ~/projects
 
-    environment:
-    JAVA_HOME:  /usr/lib/jvm/java-17.0.5-openjdk-amd64
+#    environment:
+#    JAVA_HOME:  /usr/lib/jvm/java-17.0.5-openjdk-amd64
 
     steps:
       - checkout
