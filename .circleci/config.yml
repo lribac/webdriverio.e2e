@@ -42,7 +42,7 @@ jobs:
       - run:
           name: "Run tests"
           command: |
-            npm run chrome-suite ui
+            npm run chrome-docker-suite ui
 #      - run:
 #          name: Generate Allure Report
 #          command: npm run report.ci

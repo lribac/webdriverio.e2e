@@ -47,6 +47,7 @@
         "chrome-selenium-standalone": "wdio run config/wdio.seleniumStandalone.chrome.conf.js --spec",
         "chrome-selenium-standalone-suite": "wdio run config/wdio.seleniumStandalone.chrome.conf.js --suite",
         "chrome-docker": "wdio run config/wdio.chromeDocker.conf.js --spec",
+        "chrome-docker-suite": "wdio run config/wdio.chromeDocker.conf.js --suite",
         "ui-tests": "wdio run config/wdio.chrome.conf.js --suite ui",
         "api-tests": "MODE=headless wdio run config/wdio.chrome.conf.js --suite api",
         "all-tests": "wdio run config/wdio.chrome.conf.js --spec",
