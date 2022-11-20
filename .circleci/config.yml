@@ -8,8 +8,8 @@ jobs:
   build:
     docker:
       # specify the version you desire here
-      - image: cimg/openjdk:19.0.1
-      - image: cimg/node:18.12.1
+#      - image: cimg/openjdk:19.0.1
+      - image: cimg/node:18.12.1-browsers
       # Specify service dependencies here if necessary
       # CircleCI maintains a library of pre-built images
       # documented at https://circleci.com/docs/2.0/circleci-images/
@@ -42,7 +42,7 @@ jobs:
       - run:
           name: "Run tests"
           command: |
-            npm run chrome-docker-suite ui
+            npm run chrome-suite ui
 #      - run:
 #          name: Generate Allure Report
 #          command: npm run report.ci
